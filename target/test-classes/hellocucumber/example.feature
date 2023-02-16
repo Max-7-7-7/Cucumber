@@ -1,6 +1,10 @@
 Feature: jira//PRT-1590
   Check homepage functionality
 
+  Scenario: The example
+    Given an example scenario
+    When all step definitions are implemented
+    Then the scenario passes
 
   Scenario Outline: Check homepage
     Given user opens home page
@@ -22,13 +26,6 @@ Feature: jira//PRT-1590
     Given user opens home page
     When click on developer course
     Then check developer text
-
-  Scenario: Choose JavaBasic course
-    Given user opens home page
-    When click on developer course
-    When click on Java course
-    When click on JavaBasic course
-    Then check text - basic level
 
   Scenario: Choose JavaBasic course
     Given user opens home page
